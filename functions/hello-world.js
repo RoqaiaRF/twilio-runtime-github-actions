@@ -57,14 +57,7 @@ exports.handler = function(context, event, callback) {
      'Content-Type': 'application/x-www-form-urlencoded'
      }};
 
-    let url1 = "https://bot.snapbot.app/demo";
-    let url2 = "https://app.respond.io/twilio/whatsapp/webhook/";
-
-   const config = {
-     headers: {
-     'Content-Type': 'application/x-www-form-urlencoded'
-     }};
-
+ 
   Promise.all([
        axios.post(url1, qs.stringify(requestBody), config),
        axios.post(url2, qs.stringify(requestBody), config)

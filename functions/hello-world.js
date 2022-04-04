@@ -57,16 +57,16 @@ exports.handler = function(context, event, callback) {
      'Content-Type': 'application/x-www-form-urlencoded'
      }};
 
+    let url1 = "https://bot.snapbot.app/demo";
+    let url2 = "https://app.respond.io/twilio/whatsapp/webhook/";
+
+   const config = {
+     headers: {
+     'Content-Type': 'application/x-www-form-urlencoded'
+     }};
+
   Promise.all([
        axios.post(url1, qs.stringify(requestBody), config),
-       ]).then(result => {
-           callback(null, twiml);
-       }).catch(err => {
-           console.log(err);
-           callback(err);
-       });
-  
-   Promise.all([
        axios.post(url2, qs.stringify(requestBody), config)
        ]).then(result => {
            callback(null, twiml);

@@ -59,6 +59,14 @@ exports.handler = function(context, event, callback) {
 
   Promise.all([
        axios.post(url1, qs.stringify(requestBody), config),
+       ]).then(result => {
+           callback(null, twiml);
+       }).catch(err => {
+           console.log(err);
+           callback(err);
+       });
+  
+   Promise.all([
        axios.post(url2, qs.stringify(requestBody), config)
        ]).then(result => {
            callback(null, twiml);

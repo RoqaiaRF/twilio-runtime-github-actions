@@ -7,11 +7,13 @@
     "start": "twilio-run --env"
   },
   "devDependencies": {
-    "twilio-run": "^2.0.0",
-    "axios": "^0.26.1",
-    "query-string": "^7.1.1"
+    "twilio-run": "^2.0.0"
   },
   "engines": {
-    "node" : ">=8.0.0 <11.0.0" 
+    "node": ">=8.0.0 <11.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "query-string": "^7.1.1"
   }
 }

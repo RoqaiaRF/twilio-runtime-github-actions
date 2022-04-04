@@ -1,5 +1,5 @@
 const axios = require('axios');
-const qs = require('querystring');
+const qs = require('query-string');
 
 exports.handler = function(context, event, callback) {
 

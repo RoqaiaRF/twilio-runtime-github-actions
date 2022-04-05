@@ -25,12 +25,9 @@ exports.handler = function(context, event, callback) {
       Body,
       NumMedia,
       FromState,
-      MessagingServiceSid,
-      NumMedia,
       Latitude,
       Longitude,
-      Address,
-      Label  
+      Address
    
   } = event;
 
@@ -54,12 +51,9 @@ exports.handler = function(context, event, callback) {
       Body,
       NumMedia,
       FromState, 
-     MessagingServiceSid,
-      NumMedia,
       Latitude,
       Longitude,
       Address,
-      Label  
   };
 
     let url1 = "https://bot.snapbot.app/demo";

@@ -28,8 +28,8 @@ jobs:
         run: npm ci
       - name: Install twilio cli and run deploy command
         env:
-         TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-         TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
-         TWILIO_API_SECRET: ${{secrets.TWILIO_API_SECRET}}
+         TWILIO_ACCOUNT_SID: "ACd4d92fca5bbdb9a425b4d78d7c3d58f7"
+         TWILIO_API_KEY: "SKad60a90930a47aee970c2bf41ca459c0"
+         TWILIO_API_SECRET: "M6kEpRIAwi84zshWepq23kdK3n5V0jJQ"
         # Install the Twilio CLI and the serverless plugin then deploy the function
         run: npm install twilio-cli -g && twilio plugins:install @twilio-labs/plugin-serverless && twilio serverless:deploy --service-name=example-deployed-with-github-actions --environment=dev --force

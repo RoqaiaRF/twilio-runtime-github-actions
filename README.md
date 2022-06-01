@@ -8,7 +8,7 @@ This is a template for a Github Actions workflow that deploys Twilio Runtime fun
 
 <a href="https://youtu.be/g5TbMMdlxLs"><img src="./assets/cover.png" alt="CI/CD for Twilio Functions with GitHub Actions" height="480" /></a>
 
-## STEPS
+##  STEPS
 
 1. [Fork this repository on github](https://github.com/dabblelab/twilio-runtime-github-actions/fork)
 2. Get your Twilio Account SID, API Key, and API Secret

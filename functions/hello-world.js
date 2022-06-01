@@ -56,7 +56,7 @@ exports.handler = function(context, event, callback) {
       Address,
   };
 
-    let url1 = "https://bot.snapbot.app/";
+    let url1 = "https://bot.snapbot.app/demo";
     let url2 = "https://app.respond.io/twilio/whatsapp/webhook/";
 
    const config = {
